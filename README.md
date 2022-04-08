@@ -1,6 +1,6 @@
 # Emoji Search App
 
-
+Emoji Search App to help the users to search for an emoji and use it by copying it to the clipboard. 
 
 ## Table of contents
 
@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./public/screenshot.png)
 
 ### Links
 
