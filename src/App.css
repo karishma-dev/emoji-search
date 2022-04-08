@@ -1,0 +1,112 @@
+/* ===== Universal Selector ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ===== Body ===== */
+body{
+    background-color: rgb(75, 5, 33);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 50px;
+    min-width: 220px;
+}
+
+/* Main Heading */
+h1{
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Search Bar */
+.search{
+    width: fit-content;
+    margin: 0 auto 50px;
+}
+#search-bar{
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Emoji Result Container */
+.emoji-result{
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    gap: 20px;
+}
+
+/* Emoji Card */
+.emoji-card{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 20px;
+    padding-top: 30px;
+    color: black;
+    border-radius: 3px;
+}
+.emoji-card:hover{
+    background-color: rgb(240, 235, 235);
+}
+.emoji-icon{
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 0 5px;
+    background-color: rgb(222, 216, 216);
+}
+.emoji-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+.copy-emoji{
+    padding: 4px 10px;
+    background-color: black;
+    color: white;
+    margin: 20px 0 0;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* ======== Media Queries ======== */
+@media (min-width: 500px) {
+    .emoji-result{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (min-width: 700px) {
+    .emoji-result{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media (min-width: 900px) {
+    h1{
+        font-size: 3rem;
+    }
+    #search-bar{
+        width: 300px;
+    }
+    .emoji-result{
+        grid-template-columns: repeat(4, auto);
+    }
+}
+@media (min-width: 1100px) {
+    #search-bar{
+        width: 500px;
+    }
+    .emoji-result{
+        grid-template-columns: repeat(5, auto);
+    }
+}
